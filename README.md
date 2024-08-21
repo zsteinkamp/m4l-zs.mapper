@@ -1,7 +1,7 @@
 # m4l-mapper
 Reusable, simplified multi-mapping bpatcher for Max for Live devices
 
-![zs.mapper](extras/zs.mapper.png)
+![zs.mapper](support/zs.mapper.png)
 
 ## Reason for Living
 
@@ -12,7 +12,7 @@ However, integrating it into a Max for Live device is more complex than it needs
 
 Here is the multi-mapper impelementation in the Live 12's stock LFO device:
 
-![The implementation as shipped with Live 12](extras/stock_lfo.png)
+![The implementation as shipped with Live 12](support/stock_lfo.png)
 
 There is a single mapper `[bpatcher]` [1] that is always visible, and must be placed "in front" of the large `[bpatcher]` [2], since it sits in the empty row above the seven other modulation mappers in presentation. The large `[bpatcher]` must be second in the z-order of the presentation of the device so that it may cover the other UI elements of the device when expanded, but not hide the one in the top row.
 
@@ -21,7 +21,7 @@ There are a total of six objects and 18 patch cords in this implementation.
 ### The Improvement
 There is an opportunity to simplify the design of this component by having the large `[bpatcher]` host all eight mappers.
 
-![The improvement](extras/zs.mapper.png)
+![The improvement](support/zs.mapper.png)
 
 There are now only two objects and two patch cords required in the device - the input signal, and a connection to `[thispatcher]` so that the `[bpatcher]` can expand vertically when required. This `[bpatcher]` can sit in front of all other objects, eliminating the need to maintain a "second in order". 
 
