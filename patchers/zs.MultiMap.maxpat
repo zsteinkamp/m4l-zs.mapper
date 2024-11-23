@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 2,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1678.0, 501.0, 1243.0, 1053.0 ],
+		"rect" : [ 1423.0, 542.0, 769.0, 1053.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,105 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.094117647058824, 0.094117647058824, 0.094117647058824, 1.0 ],
+					"activebgoncolor" : [ 0.094117647058824, 0.094117647058824, 0.094117647058824, 1.0 ],
+					"activetextcolor" : [ 1.0, 0.67843137254902, 0.337254901960784, 1.0 ],
+					"activetextoncolor" : [ 1.0, 0.67843137254902, 0.337254901960784, 1.0 ],
+					"annotation" : "Shows or hides the device's Multimap browser.",
+					"annotation_name" : "Show/Hide Multimap",
+					"automation" : "Hide",
+					"automationon" : "Show",
+					"bgcolor" : [ 0.094117647058824, 0.094117647058824, 0.094117647058824, 1.0 ],
+					"bgoncolor" : [ 0.094117647058824, 0.094117647058824, 0.094117647058824, 1.0 ],
+					"bordercolor" : [ 1.0, 0.67843137254902, 0.337254901960784, 1.0 ],
+					"id" : "obj-23",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"outputmode" : 1,
+					"parameter_enable" : 1,
+					"patching_rect" : [ 448.0, 432.0, 15.0, 15.0 ],
+					"pictures" : [ "multimap-closed-off.svg", "multimap-open-off.svg" ],
+					"presentation" : 1,
+					"presentation_rect" : [ 264.0, 3.0, 15.0, 15.0 ],
+					"remapsvgcolors" : 1,
+					"saved_attribute_attributes" : 					{
+						"activebgcolor" : 						{
+							"expression" : "themecolor.live_lcd_bg"
+						}
+,
+						"activebgoncolor" : 						{
+							"expression" : "themecolor.live_lcd_bg"
+						}
+,
+						"activetextcolor" : 						{
+							"expression" : "themecolor.live_lcd_control_fg"
+						}
+,
+						"activetextoncolor" : 						{
+							"expression" : "themecolor.live_lcd_control_fg"
+						}
+,
+						"bgcolor" : 						{
+							"expression" : "themecolor.live_lcd_bg"
+						}
+,
+						"bgoncolor" : 						{
+							"expression" : "themecolor.live_lcd_bg"
+						}
+,
+						"bordercolor" : 						{
+							"expression" : "themecolor.live_lcd_control_fg"
+						}
+,
+						"textcolor" : 						{
+							"expression" : "themecolor.live_lcd_control_fg_zombie"
+						}
+,
+						"textoffcolor" : 						{
+							"expression" : "themecolor.live_lcd_control_fg_zombie"
+						}
+,
+						"valueof" : 						{
+							"parameter_annotation_name" : "Show/Hide Multimap",
+							"parameter_enum" : [ "Hide", "Show" ],
+							"parameter_initial" : [ 0 ],
+							"parameter_initial_enable" : 1,
+							"parameter_invisible" : 2,
+							"parameter_longname" : "Show Multimap[3]",
+							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "Multimap",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "Off",
+					"textcolor" : [ 0.525490196078431, 0.525490196078431, 0.525490196078431, 1.0 ],
+					"textoffcolor" : [ 0.525490196078431, 0.525490196078431, 0.525490196078431, 1.0 ],
+					"texton" : "On",
+					"usepicture" : 1,
+					"usesvgviewbox" : 1,
+					"varname" : "multimapbutton"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 478.0, 23.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
@@ -499,7 +598,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 486.0, 136.0, 296.0, 22.0 ],
-					"text" : "script sendbox displaybg presentation_rect 0 0 $1 163"
+					"text" : "script sendbox displaybg presentation_rect 0 0 $1 169"
 				}
 
 			}
@@ -613,7 +712,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1465,93 +1564,6 @@
 			}
 , 			{
 				"box" : 				{
-					"activebgcolor" : [ 0.094117647058824, 0.094117647058824, 0.094117647058824, 1.0 ],
-					"activebgoncolor" : [ 0.094117647058824, 0.094117647058824, 0.094117647058824, 1.0 ],
-					"activetextcolor" : [ 1.0, 0.67843137254902, 0.337254901960784, 1.0 ],
-					"activetextoncolor" : [ 1.0, 0.67843137254902, 0.337254901960784, 1.0 ],
-					"annotation" : "Shows or hides the device's Multimap browser.",
-					"annotation_name" : "Show/Hide Multimap",
-					"automation" : "Hide",
-					"automationon" : "Show",
-					"bgcolor" : [ 0.094117647058824, 0.094117647058824, 0.094117647058824, 1.0 ],
-					"bgoncolor" : [ 0.094117647058824, 0.094117647058824, 0.094117647058824, 1.0 ],
-					"bordercolor" : [ 1.0, 0.67843137254902, 0.337254901960784, 1.0 ],
-					"id" : "obj-23",
-					"maxclass" : "live.text",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"outputmode" : 1,
-					"parameter_enable" : 1,
-					"patching_rect" : [ 448.0, 432.0, 15.0, 15.0 ],
-					"pictures" : [ "multimap-closed-off.svg", "multimap-open-off.svg" ],
-					"presentation" : 1,
-					"presentation_rect" : [ 264.0, 3.0, 15.0, 15.0 ],
-					"remapsvgcolors" : 1,
-					"saved_attribute_attributes" : 					{
-						"activebgcolor" : 						{
-							"expression" : "themecolor.live_lcd_bg"
-						}
-,
-						"activebgoncolor" : 						{
-							"expression" : "themecolor.live_lcd_bg"
-						}
-,
-						"activetextcolor" : 						{
-							"expression" : "themecolor.live_lcd_control_fg"
-						}
-,
-						"activetextoncolor" : 						{
-							"expression" : "themecolor.live_lcd_control_fg"
-						}
-,
-						"bgcolor" : 						{
-							"expression" : "themecolor.live_lcd_bg"
-						}
-,
-						"bgoncolor" : 						{
-							"expression" : "themecolor.live_lcd_bg"
-						}
-,
-						"bordercolor" : 						{
-							"expression" : "themecolor.live_lcd_control_fg"
-						}
-,
-						"textcolor" : 						{
-							"expression" : "themecolor.live_lcd_control_fg_zombie"
-						}
-,
-						"textoffcolor" : 						{
-							"expression" : "themecolor.live_lcd_control_fg_zombie"
-						}
-,
-						"valueof" : 						{
-							"parameter_annotation_name" : "Show/Hide Multimap",
-							"parameter_enum" : [ "Hide", "Show" ],
-							"parameter_initial" : [ 0 ],
-							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 2,
-							"parameter_longname" : "Show Multimap[3]",
-							"parameter_mmax" : 1,
-							"parameter_modmode" : 0,
-							"parameter_shortname" : "Multimap",
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"text" : "Off",
-					"textcolor" : [ 0.525490196078431, 0.525490196078431, 0.525490196078431, 1.0 ],
-					"textoffcolor" : [ 0.525490196078431, 0.525490196078431, 0.525490196078431, 1.0 ],
-					"texton" : "On",
-					"usepicture" : 1,
-					"usesvgviewbox" : 1,
-					"varname" : "multimapbutton"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -1727,9 +1739,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 431.0, 719.0, 235.0, 77.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 282.0, 163.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 282.0, 169.0 ],
 					"proportion" : 0.39,
-					"rounded" : 4,
+					"rounded" : 0,
 					"saved_attribute_attributes" : 					{
 						"bgfillcolor" : 						{
 							"expression" : "themecolor.live_lcd_bg"
@@ -2590,6 +2602,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 3 ],
 					"order" : 0,
 					"source" : [ "obj-5", 2 ]
@@ -3059,57 +3078,57 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Abl.Map.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/zs.mapper",
+				"bootpath" : "~/Documents/Max 8/Packages/m4l-zs.mapper/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Abl.MapUi.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/zs.mapper",
+				"bootpath" : "~/Documents/Max 8/Packages/m4l-zs.mapper/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Polarity_PlusLarge.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/zs.mapper",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Packages/m4l-zs.mapper/images",
+				"patcherrelativepath" : "../images",
 				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Polarity_PlusMinusLarge.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/zs.mapper",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Packages/m4l-zs.mapper/images",
+				"patcherrelativepath" : "../images",
 				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "getObjectRect.js",
-				"bootpath" : "~/Documents/Max 8/Packages/zs.mapper",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Packages/m4l-zs.mapper/code",
+				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "multimap-closed-off.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/zs.mapper",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Packages/m4l-zs.mapper/images",
+				"patcherrelativepath" : "../images",
 				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "multimap-open-off.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/zs.mapper",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Packages/m4l-zs.mapper/images",
+				"patcherrelativepath" : "../images",
 				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "multimap-unmap.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/zs.mapper",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Packages/m4l-zs.mapper/images",
+				"patcherrelativepath" : "../images",
 				"type" : "svg",
 				"implicit" : 1
 			}
