@@ -14,8 +14,8 @@ In either case, extract the files to a directory inside of the `~/Documents/Max 
 
 ### Usage in Your Devices
 
-* Create a `[bpatcher zs.MultiMap]` object
-* Set its Scripting Name to `multimap`
+* Create a `[bpatcher zs.mapper]` object
+* Set its Scripting Name to `multimap` (required)
 * Check "Include in Presentation"
 * Set the Presentation Rectangle to `2. 4. 251. 18.`
 * Right-click the object and choose "Bring to Front"
