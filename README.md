@@ -10,7 +10,7 @@ Check the [Releases](https://github.com/zsteinkamp/m4l-zs.mapper/releases) page 
 
 You can also use `git` to clone the repository.
 
-In either case, extract the files to a directory inside of the `~/Documents/Max 8/Packages/` directory, which by default is in Max's search path.
+In either case, extract the files to a directory inside of the `~/Documents/Max 8/Library/` directory, which by default is in Max's search path.
 
 ### Usage in Your Devices
 
