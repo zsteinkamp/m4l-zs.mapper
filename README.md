@@ -3,10 +3,27 @@ Reusable, simplified multi-mapping bpatcher for Max for Live devices
 
 ![zs.mapper](support/zs.mapper.png)
 
-## Installation
+## Installation / Use
+
+### Download / Install
 Check the [Releases](https://github.com/zsteinkamp/m4l-zs.mapper/releases) page for the latest release in downloadable .zip form.
 
-You can also use `git` to clone the repository to your Max Packages path. Detailed instructions are below.
+You can also use `git` to clone the repository.
+
+In either case, extract the files to a directory inside of the `~/Documents/Max 8/Packages/` directory, which by default is in Max's search path.
+
+### Usage in Your Devices
+
+* Create a `[bpatcher zs.MultiMap]` object
+* Set its Scripting Name to `multimap`
+* Check "Include in Presentation"
+* Set the Presentation Rectangle to `2. 4. 251. 18.`
+* Right-click the object and choose "Bring to Front"
+* Attach a signal to the left inlet
+* ...
+* Profit!
+
+Note that the object will manage the position of the Expand/Collapse button. It may not look like it is positioned correctly if you change the width of the `[bpatcher]`, but once you save the device and return to Live it will be positioned correctly.
 
 ## Reason for Living
 
@@ -29,21 +46,6 @@ There is an opportunity to simplify the design of this component by having the l
 ![The improvement](support/zs.mapper.png)
 
 There are now only two objects and two patch cords required in the device - the input signal, and a connection to `[thispatcher]` so that the `[bpatcher]` can expand vertically when required. This `[bpatcher]` can sit in front of all other objects, eliminating the need to maintain a "second in order". 
-
-## Integrating Into Your Device
-Clone this repo into a directory in Max's search path.
-
-The most reliable place to have it is under `~/Documents/Max 8/Packages/`, since that path is part of Max's standard set of search paths.
-
-If you want to extract it elsewhere, make sure to configure Max to use that directory too (and include subdirectories).
-
-e.g.
-```
-cd ~/Documents/Max\ 8/Packages/
-git clone github.com:zsteinkamp/m4l-zs.mapper
-```
-
-You should be able to then create a `[bpatcher]` object in your device and have it use `zs.MultiMap.maxpat` as its patcher.
 
 ## Acknowledgments
 Thanks to the Ableton / Cycling 74 teams for improving the mapper for better CPU utilization through the creative use of `[poly~]`, as well as keeping the stock devices editable so that people like me may learn from them!
