@@ -1,4 +1,4 @@
-# m4l-mapper
+# zs.mapper
 Reusable, simplified multi-mapping bpatcher for Max for Live devices
 
 ![zs.mapper](support/zs.mapper.png)
